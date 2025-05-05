@@ -12,20 +12,23 @@ Este proyecto es una **API RESTful** desarrollada en **Laravel** y **MySQL** par
 
 ---
 
-## 📁 Estructura del proyecto
-
 laravel-crud-api/
-├── app/ # Lógica de Laravel (Modelos, Controladores, etc.)
-├── database/ # Migraciones y seeds
+├── app/                 # Modelos, controladores y lógica de negocio
+├── bootstrap/
+├── config/
+├── database/            # Migraciones y seeds
 ├── public/
-│ └── frontend/
-│ ├── index.html # Interfaz visual del CRUD
-│ └── script.js # Conexión frontend ↔ API
+│   └── frontend/        # Interfaz visual (HTML + JS)
+│       ├── index.html   # Interfaz del CRUD
+│       └── script.js    # Comunicación frontend ↔ API
+├── resources/
 ├── routes/
-│ └── api.php # Definición de rutas para la API
-├── .env # Variables de entorno (no se sube a GitHub)
-└── README.md # Este archivo
----
+│   └── api.php          # Rutas API (RESTful)
+├── storage/
+├── .env                 # Variables de entorno (no subir a GitHub)
+├── .gitignore
+├── composer.json
+└── README.md
 
 ## 🔗 Endpoints principales
 
